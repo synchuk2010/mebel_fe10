@@ -164,16 +164,16 @@ em {
 	background-position: 0 0;
 }
 .advantage .left-h2 {
-	padding: 70px 10px 0 310px;
+	padding: 70px 10px 0 300px;
 }
 .advantage .left-p {
-	padding: 10px 10px 0 310px;
+	padding: 10px 10px 0 300px;
 }
 .advantage .right-h2 {
-	padding: 70px 310px 0 10px;
+	padding: 70px 300px 0 10px;
 }
 .advantage .right-p {
-	padding: 10px 310px 0 10px;
+	padding: 10px 300px 0 10px;
 }
 .advantage .piece2 {
 	background: url(../images/mebel_img2.png) no-repeat center left;
@@ -184,6 +184,9 @@ em {
 	background: url(../images/mebel_img3.png) no-repeat center right, url(../images/mebel_li_fon_opac_other.png) no-repeat 50%50%;;
 	width: 1100px;
 	height: 327px;
+}
+.advantage .piece3 .right-h2 {
+	padding-top: 50px;
 }
 .advantage .piece4 {
 	background: url(../images/mebel_img4.png) no-repeat center left;
@@ -210,6 +213,9 @@ em {
 	width: 1100px;
 	height: 327px;
 }
+.advantage .piece8 .left-h2 {
+	padding-top: 50px;
+}
 .advantage .piece9 {
 	background: url(../images/mebel_img9.png) no-repeat center right, url(../images/mebel_li_fon_opac_other.png) no-repeat 50%50%;;
 	width: 1100px;
@@ -234,7 +240,7 @@ em {
 .advantage a.red2:before {
 	background-position: -250px 0;
 	right: 180px;
-	top: -50px;
+	top: -80px;
 }
 .advantage a.red3:before {
 	background-position: -362px 0;
@@ -259,13 +265,10 @@ em {
 .advantage a.red7:before {
 	background-position: -810px 0;
 	left: 180px;
-	top: -50px;
+	top: -80px;
 }
 .advantage a.red8:before {
 	background-position: -922px 0;
 	right: 180px;
 	top: -50px;
-}
-.advantage a:hover {
-	transform: scale(0.9,0.9);
 }

@@ -93,7 +93,7 @@ em {
 }
 .advantage {
 	position: relative;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .advantage:before,
 .advantage:after {
@@ -115,9 +115,8 @@ em {
 	left: auto;
 	background: url(../images/mebel_flowers_right.png) no-repeat;
 }
-h2 {
-	padding-bottom: 60px;
-  margin-right: 50px;
+h2.redline {
+	padding: 0 50px 60px;
 	position: relative;
 	text-align: center;
 	font-size: 58px;
@@ -126,30 +125,30 @@ h2 {
 	text-transform: uppercase;
 	font-weight: normal;
 }
-h2:after {
+h2.redline:after {
 	content: "";
 	display: block;
 	position: relative;
-	left: 300px;
+	left: 50%;
 	top: 30px;
+	margin-left: -230px;
 	width: 460px;
 	height: 15px;
 	background: url(../images/sprite.PNG) no-repeat 0 -52px;
 }
-.advantage h3 {
-	font-size: 25px;
-	line-height: 30px;
+.advantage h3,
+.advantage p {
 	color: black;
-	text-transform: uppercase;
 	font-style: normal;
 	font-weight: normal;
+	line-height: 30px;
+}
+.advantage h3 {
+	font-size: 25px;
+	text-transform: uppercase;
 }
 .advantage p {
 	font-size: 18px;
-	line-height: 30px;
-	color: black;
-	font-style: normal;
-	font-weight: normal;
 }
 .advantage ul {
 	padding-top: 30px;

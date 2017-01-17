@@ -2,118 +2,267 @@ html {
 	margin: 0;
 	padding: 0;
 }
-
 body {
 	margin: 0;
 	padding: 0;
 	color: black;
-	font: normal 27px/48px 'Times New Romain', serif;
+	font: normal 27px/48px 'Open Sans', sans-serif;
 	background: #f00;
 }
-
 .clr:after {
 	content: "";
 	display: block;
 	clear: both;
 }
-
 p {
 	margin: 0;
 	padding: 20px 0;
 }
-
 a {
 	color: #ff0000;
 	text-decoration: underline;
 }
-
 a:hover {
 	color: #00ff00;
 }
-
 a img {
 	border: none;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: aqua;
+	color: black;
 }
-
 h1 {
 	padding: 220px 0 24px;
-	font-size: 90px;
+	font-size: 70px;
 	position: relative;
 }
-
 h2 {
 	padding: 0 0 75px;
 }
-
 .fl {
 	float: left;
 }
-
 .fr {
 	float: right;
 }
-
 .fn {
 	float: none;
 }
-
 .tal {
 	text-align: left;
 }
-
 .tac {
 	text-align: center;
 }
-
 .tar {
 	text-align: right;
 }
-
 .ucase {
 	text-transform: uppercase;
 }
-
 .lcase {
 	text-transform: none;
 }
-
 .bold {
 	font-weight: bold;
 }
-
 .italic {
 	font-style: italic;
 }
-
 strong {
 	font-weight: bold;
 }
-
 em {
 	font-style: italic;
 }
-
 #mainwrapper {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	min-width: 2140px;
+	min-width: 1140px;
 	background: #fff;
 }
-
 .resize {
 	position: relative;
 	margin: 0 auto;
-	width: 2100px;
 	padding: 0 20px;
+	width: 1060px;
 }
-
-/* your styles */
-
+.advantage {
+	position: relative;
+  padding: 40px 0;
+}
+.advantage:before,
+.advantage:after {
+	content: "";
+	position: absolute;
+	top: 1500px;
+	left: 0;
+	width: 457px;
+	height: 693px;
+	background: url(../images/mebel_flowers_left.png) no-repeat;
+	z-index: 2;
+	opacity: 0.1;
+}
+.advantage:after {
+	height: 1062px;
+	width: 430px;
+	top: 0;
+	right: 0;
+	left: auto;
+	background: url(../images/mebel_flowers_right.png) no-repeat;
+}
+h2.redline {
+	padding: 0 50px 60px;
+	position: relative;
+	text-align: center;
+	font-size: 58px;
+	line-height: 85px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h2.redline:after {
+	content: "";
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 30px;
+	margin-left: -230px;
+	width: 460px;
+	height: 15px;
+	background: url(../images/sprite.PNG) no-repeat 0 -52px;
+}
+.advantage h3,
+.advantage p {
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 30px;
+}
+.advantage h3 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.advantage p {
+	font-size: 18px;
+}
+.advantage ul {
+	padding-top: 30px;
+}
+.advantage li:nth-child(odd) {
+	padding: 85px 350px 85px 0;
+  min-height: 170px;
+	position: relative;
+	text-align: right;
+	list-style: none;
+}
+.advantage li:nth-child(even) {
+	padding: 85px 0 85px 350px;
+	min-height: 170px;
+  position: relative;
+	text-align: left;
+	list-style: none;
+  display: inline-block;
+  vertical-align: baseline;
+	background: linear-gradient(to left, #ffffff 0%, #f1f3f4 40%, #f1f3f4 60%, #ffffff 100%);
+}
+.advantage li:nth-child(odd) div {
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 30px 35px 10px 10px;
+	background: linear-gradient(to left, #f1f0f0, #f1f0f0);
+	border-radius: 50%;
+}
+.advantage li:nth-child(even) div {
+	display: block;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	padding: 35px 10px 10px 35px;
+	background: linear-gradient(to right, #f1f0f0, #f1f0f0);
+	border-radius: 50%;
+}
+.advantage img {
+	position: relative;
+	width: 270px;
+	height: 270px;
+	border-radius: 50%;
+}
+.advantage li:nth-child(odd) div:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 210px;
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(to top, #ef584e, #ed2e29);
+	border-radius: 50%;
+	z-index: 2;
+}
+.advantage li:nth-child(even) div:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 210px;
+	left: 200px;
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(to top, #ef584e, #ed2e29);
+	border-radius: 50%;
+	z-index: 2;
+}
+.advantage li:nth-child(odd) div:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 28px;
+	left: 42px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/sprite.PNG) no-repeat 0 0;
+	z-index: 2;
+}
+.advantage li:nth-child(even) div:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/sprite.PNG) no-repeat 0 0;
+	z-index: 2;
+}
+.advantage li div.icon2:after {
+	background-position: -52px 0;
+}
+.advantage li div.icon2:after {
+	background-position: -52px 0;
+}
+.advantage li div.icon3:after {
+	background-position: -104px 0;
+}
+.advantage li div.icon4:after {
+	background-position: -156px 0;
+}
+.advantage li div.icon5:after {
+	background-position: -208px 0;
+}
+.advantage li div.icon6:after {
+	background-position: -260px 0;
+}
+.advantage li div.icon7:after {
+	background-position: -312px 0;
+}
+.advantage li div.icon8:after {
+	background-position: -364px 0;
+}
+.advantage li div.icon9:after {
+	background-position: -416px 0;
+}

@@ -268,8 +268,9 @@ h2.redline:after {
 }
 
 .free_spa{
-	padding: 89px 0 74px 0;
-	background: url("../images/mebel_free_spa_bg1.jpg") no-repeat center top;
+	padding: 89px 0 74px;
+	background: url("../images/mebel_free_spa_bg1.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 .spa_shape{
@@ -278,33 +279,32 @@ h2.redline:after {
 	background: rgba(0,0,0,0.7);
 }
 
-.spa_title_fl{
-	padding: 30px 10px 0 10px;
-	text-align: center;
-  font-family: 'Open Sans', sans-serif;
-	font-size: 37px;
-	line-height: 48px;
-	font-weight: 300;
-	color: #fff;
+.spa_shape:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
-.spa_title_sl{
-	padding: 0px 5px 32px 5px;
+.spa_shape h2{
+	margin: 0 10px;
+	padding: 15px 0 30px;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 46px;
-	line-height: 52px;
-	font-weight: normal;
+	font: normal 46px/52px 'Open Sans', sans-serif;;
 	color: #fff;
 	text-transform: uppercase;
 }
 
-.spa_list{
-	float: left;
+.spa_shape h2:first-line{
+	text-align: center;
+	font: 300 37px/48px 'Open Sans', sans-serif;
+	text-transform: none;
+	color: #fff;
 }
-.spa_list ul{
-	margin: 0 auto;
-	padding: 0 0 50px 48px;
+
+.spa_list{
+	margin: 0;
+	padding-bottom: 50px;
+	float: left;
 }
 
 .spa_list li{
@@ -312,7 +312,7 @@ h2.redline:after {
 	position: relative;
 	padding-left: 30px;
 	text-decoration: none;
-	font: 20px/28px 'Open Sans', sans-serif;
+	font: 300 20px/28px 'Open Sans', sans-serif;
 	color: #fff;
 }
 
@@ -328,14 +328,23 @@ h2.redline:after {
 
 .spa_form{
 	float: right;
-	padding: 20px 45px 0 0;
+	padding: 18px 45px 0 0;
 	border-left: 4px solid red;
+
 }
 
 .spa_form input{
-	padding: 7px 175px 7px 20px;
+	padding: 7px 150px 7px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
   border: 1px solid transparent;
 	border-radius: 1px;
+}
+
+.spa_form input:focus{
+	border: 1px solid red;
 }
 
 .spa_form input:hover{
@@ -347,18 +356,13 @@ h2.redline:after {
 	padding: 0 0 5px 30px;
 }
 
-.spa_button{
-	display: block;
-	padding: 20px 0 2px 30px;
-
+.spa_form .button{
+	padding-top: 20px;
 }
-.spa_button a{
-	padding: 5px 25px 7px 25px;
+.spa_form .spa_button{
+	padding: 5px 25px 7px;
 	border-radius: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	line-height: 30px;
-	text-decoration: none;
+	font: normal 20px/30px 'Open Sans', sans-serif;
 	color: white;
 	background: red;
 }

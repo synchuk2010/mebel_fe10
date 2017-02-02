@@ -266,3 +266,104 @@ h2.redline:after {
 .advantage li div.icon9:after {
 	background-position: -416px 0;
 }
+
+.free_spa{
+	padding: 89px 0 74px;
+	background: url("../images/mebel_free_spa_bg1.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.spa_shape{
+	margin: 0 auto;
+	width: 1000px;
+	background: rgba(0,0,0,0.7);
+}
+
+.spa_shape:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.spa_shape h2{
+	margin: 0 10px;
+	padding: 15px 0 30px;
+	text-align: center;
+	font: normal 46px/52px 'Open Sans', sans-serif;;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.spa_shape h2:first-line{
+	text-align: center;
+	font: 300 37px/48px 'Open Sans', sans-serif;
+	text-transform: none;
+	color: #fff;
+}
+
+.spa_list{
+	margin: 0;
+	padding-bottom: 50px;
+	float: left;
+}
+
+.spa_list li{
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	text-decoration: none;
+	font: 300 20px/28px 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+.spa_list li:before{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: 12px;
+	left: 3px;
+	background: red;
+}
+
+.spa_form{
+	float: right;
+	padding: 18px 45px 0 0;
+	border-left: 4px solid red;
+
+}
+
+.spa_form input{
+	padding: 7px 150px 7px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+  border: 1px solid transparent;
+	border-radius: 1px;
+}
+
+.spa_form input:focus{
+	border: 1px solid red;
+}
+
+.spa_form input:hover{
+	border: 1px solid red;
+}
+
+.spa_form p {
+	margin: 0 auto;
+	padding: 0 0 5px 30px;
+}
+
+.spa_form .button{
+	padding-top: 20px;
+}
+.spa_form .spa_button{
+	padding: 5px 25px 7px;
+	border-radius: 1px;
+	font: normal 20px/30px 'Open Sans', sans-serif;
+	color: white;
+	background: red;
+}
+

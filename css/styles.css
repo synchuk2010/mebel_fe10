@@ -28,11 +28,7 @@ a {
 }
 
 a:hover {
-	color: #00ff00;
-}
-
-a img {
-	border: none;
+	color: #2610ff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -435,14 +431,13 @@ h2.redline:after {
 }
 
 /*header by aleksandr_golyk*/
-.header {
-	padding-top: 10px;
+header {
+	padding-top: 30px;
 	padding-bottom: 27px;
 }
 
 .top_line {
 	display: block;
-	/*padding-bottom: 24px;*/
 	position: relative;
 	background: white;
 }
@@ -459,24 +454,34 @@ h2.redline:after {
 	float: right;
 }
 
-.top_line_contact p {
+.top_line_contact p{
+	padding:0;
+}
+
+.top_line_contact a{
+	text-decoration: none;
+}
+
+.top_line_contact p:first-child a{
 	padding: 0;
 	text-align: center;
 	font: normal 23px/40px 'Open Sans', sans-serif;
+	color: #333;
 }
 
-.top_line_contact span {
+
+.top_line_contact p:not(:first-child) {
 	display: block;
+	padding: 9px 0;
 	/*padding: 9px 0;*/
 	width: 100%;
 	border: solid 2px #ec2026;
-	font: normal 13px/23px 'Open Sans', sans-serif;
+	font: normal 13px/15px 'Open Sans', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .top_line_contact:after {
-	display: block;
 	position: absolute;
 	content: "";
 	clear: both;
@@ -562,11 +567,11 @@ h2.redline:after {
 }
 
 .mebel_zayavka li {
-	display: block;
 	float: left;
 	position: relative;
 	padding-left: 20px;
 	text-decoration: none;
+	list-style-type: none;
 	font: bold 18px/29px 'Open Sans', sans-serif;
 	color: #fff;
 }
